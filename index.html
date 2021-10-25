@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huerta App │ Semilla</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 <body>
-    <header>
-        <div class="headerPrincipal">
-            <img class="headerPrincipal__logo" src="" alt="logo">
-            <p class="headerPrincipal__texto">¡Encontrá que sembrar este mes acá!</p>
+    <div class="container-fluid m-0 p-0">
+        <header class="d-flex flex-column justify-content-center align-items-center rounded-top mt-3 mx-3 header-index">
+            <img class="header-index-logo" src="" alt="logo">
+            <p class="header-index-texto">¡Encontrá que sembrar este mes acá!</p>
+        </header>
+        <div class="d-flex justify-content-center align-items-center section-index">
+            <div><button type="button" class="btn btn-outline-secondary button">Ir a ver que siembro</button></div>
         </div>
-    </header>
-    <main>
-        <div class="contenedor"><button class="contenedor__boton">Ir a ver que siembro</button></div>
-    </main>
-    <footer class="footer">
-        <p class="footer__texto">© 2021 Semilla</p>
-    </footer>
+        <div class="footer w-100 d-flex justify-content-center">
+            <div class="footer-container w-75 d-flex justify-content-center position-fixed rounded-top">
+                <p class="footer-texto mb-0">© 2021  <span class="font-weight-bold">Semilla</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
